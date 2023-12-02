@@ -17,11 +17,10 @@ public class A3Q2 {
 		String begin = "Today is";
 		while(cnt <= 1) {
 			
-			if(day_n == 7) {
-				day_n = 0;
-			}
-			
 			switch(day_n) {
+				case 0:
+					System.out.print( begin + " Sunday ");
+					break;
 				case 1:
 					System.out.print( begin + " Monday ");
 					break;
@@ -40,14 +39,12 @@ public class A3Q2 {
 				case 6:
 					System.out.print( begin + " Saturday ");
 					break;
-				case 0:
-					System.out.print( begin + " Sunday ");
-					break;
 				default:
 					System.out.print("Wronng Choise.");
 			}
-			System.out.println("Logic Incomplete.");
-			
+			day_n = day_n + day_f; 
+			day_n = (day_n % 7);
+			begin = "the future day is";
 			cnt++;
 		}
 		
