@@ -21,9 +21,9 @@ public class A3Q7 {
 		if(N >=0 && N <= 50) {
 			total_price = 3.0f * N; 
 		}else if(N > 50 && N <= 200) {
-			total_price = (3.0f * 50) + ((200 - N) * 4.8f);
+			total_price = (3.0f * 50) + ((N - 50) * 4.8f);
 		}else if(N > 200 && N <= 400) {
-			total_price = (3.0f * 50) + (150 * 4.8f) + ((400 - N) * 5.8f);
+			total_price = (3.0f * 50) + (150 * 4.8f) + ((N - 200) * 5.8f);
 		}else if(N >= 400) {
 			total_price = (3.0f * 50) + (150 * 4.8f) + (200 * 5.8f) + ((N - 400) * 6.2f);
 		} else {
